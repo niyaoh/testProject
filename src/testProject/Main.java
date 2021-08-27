@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
+		IMember mem = new saveMember_func();
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -14,6 +15,7 @@ public class Main {
 		while(true) {
 			switch(select) {
 			case 1 :
+				mem.saveMember();
 					break;
 			case 2 :
 					break;
