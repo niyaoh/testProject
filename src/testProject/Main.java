@@ -4,9 +4,12 @@ import java.util.Scanner;
 
 import board.Board;
 
+import alanFile.Login;
+
 public class Main {
 
 	public static void main(String[] args) {
+		Login alan = new Login();
 		
 		Board board = new Board();
 		
@@ -22,11 +25,11 @@ public class Main {
 					break;
 			case 2 :
 					break;
-			case 3 :
+			case 3 :alan.display();		//강동원
 					break;
 			case 4 :
 					break;
-			case 5 :board.boardOpen();
+			case 5 :board.boardOpen();	//김도윤
 					board.boardPrint();
 					return;
 			}
