@@ -2,13 +2,13 @@ package testProject;
 
 import java.util.Scanner;
 
-
-import board.Board;
-
 import alanFile.Login;
-
+import board.Board;
 import raina.logout;
 import raina.logoutInterface;
+import sunwoo.MemberView;
+
+
 
 
 public class Main {
@@ -17,7 +17,7 @@ public class Main {
 		Login alan = new Login();
 		logoutInterface li = new logout();
 		Board board = new Board();
-		
+		MemberView View=new MemberView();
 		Scanner sc = new Scanner(System.in);
 		
 		
@@ -32,6 +32,7 @@ public class Main {
 			case 1 :
 					break;
 			case 2 :
+				View.display();         //김선우
 					break;
 			case 3 :alan.display();		//강동원
 					break;
