@@ -2,9 +2,12 @@ package testProject;
 
 import java.util.Scanner;
 
+import alanFile.Login;
+
 public class Main {
 
 	public static void main(String[] args) {
+		Login alan = new Login();
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -18,7 +21,7 @@ public class Main {
 					break;
 			case 2 :
 					break;
-			case 3 :
+			case 3 : alan.display();
 					break;
 			case 4 :
 					break;
