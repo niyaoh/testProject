@@ -2,9 +2,13 @@ package testProject;
 
 import java.util.Scanner;
 
+import board.Board;
+
 public class Main {
 
 	public static void main(String[] args) {
+		
+		Board board = new Board();
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -22,8 +26,9 @@ public class Main {
 					break;
 			case 4 :
 					break;
-			case 5 :
-					break;
+			case 5 :board.boardOpen();
+					board.boardPrint();
+					return;
 			}
 		}
 		
